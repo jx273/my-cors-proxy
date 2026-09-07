@@ -1,0 +1,4 @@
+# Change "my-cors-proxy" to your own custom worker name
+name = "my-cors-proxy"
+main = "index.js"
+compatibility_date = "2024-01-01"
