@@ -58,15 +58,18 @@ Open wrangler.toml and update the "name" field if you wish to use a custom worke
 
 ### Step 3: Authenticate and Deploy
 Run the following commands in your terminal:
+
 1. Log in to your Cloudflare account via browser:
 > npx wrangler login
 
 2. Deploy the Worker to Cloudflare:
 > npx wrangler deploy
 
+*(Note for new Cloudflare accounts: If prompted to register a workers.dev subdomain, type "y" to proceed, enter a unique subdomain name, and confirm with "y" to finish deployment).*
+
 ### Step 4: Obtain and Verify Proxy URL
 Upon successful deployment, Wrangler will output your live URL:
-> Published my-cors-proxy
-> https://my-cors-proxy.<your-subdomain>.workers.dev
+> Deployed my-cors-proxy triggers
+>   https://my-cors-proxy.<your-subdomain>.workers.dev
 
 Copy this URL and set it as CLOUDFLARE_PROXY_URL in your Flutter application's .env configuration file.
